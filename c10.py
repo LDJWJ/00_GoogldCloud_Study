@@ -60,7 +60,7 @@ if DEVELOP_MODE:
     one_item = read_dataset(TRAIN_DATA_PATTERN, batch_size=2, truncate=1)
     print(list(one_item)) # should print one batch of 2 items
 
-### wide and deep 모델
+### wide and deep model
 import tensorflow as tf
 
 real = {
@@ -176,7 +176,7 @@ history = model.fit(train_dataset,
                     steps_per_epoch=steps_per_epoch,
                     callbacks=[cp_callback]) 
 
-# matplot 부분은 생략
+# delete matplot source code
 # Export and deploy the trained model
 import time
 export_dir = '{}/export/flights_{}'.format(output_dir, time.strftime("%Y%m%d-%H%M%S"))

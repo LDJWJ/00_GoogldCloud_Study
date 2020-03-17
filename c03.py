@@ -1,5 +1,5 @@
 ## ===========
-## Versino Check
+## Version Check
 ## ===========
 import tensorflow as tf
 import sys

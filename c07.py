@@ -60,7 +60,7 @@ if DEVELOP_MODE:
     one_item = read_dataset(TRAIN_DATA_PATTERN, batch_size=2, truncate=1)
     print(list(one_item)) # should print one batch of 2 items
 
-### wide and deep 모델
+### wide and deep model
 import tensorflow as tf
 
 real = {
@@ -123,10 +123,11 @@ if DEVELOP_MODE:
     print(sparse.keys())
     print(real.keys())
 
-## 모델 훈련
+## model fit
 output_dir='gs://{}/flights/trained_model'.format(BUCKET)
 os.environ['OUTDIR'] = output_dir  # needed for deployment
 print('Writing trained model to {}'.format(output_dir))
 
-# c08.sh 작업해야함.
+# after execute c07
 # python3 c07.py
+# , execute c08.sh 

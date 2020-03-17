@@ -1,4 +1,4 @@
-# 버전 확인 
+# Version Check
 import tensorflow as tf
 import sys
 print(tf.version.VERSION)

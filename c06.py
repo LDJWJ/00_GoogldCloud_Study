@@ -60,7 +60,7 @@ if DEVELOP_MODE:
     one_item = read_dataset(TRAIN_DATA_PATTERN, batch_size=2, truncate=1)
     print(list(one_item)) # should print one batch of 2 items
 
-### wide and deep 모델
+### wide and deep model
 import tensorflow as tf
 
 real = {
